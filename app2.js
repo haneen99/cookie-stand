@@ -8,6 +8,7 @@ function shop(shopname,min,max,max,avg,){
     this.randcust=[];
     this.avgcookiesperh:[],
     this.total :0
+    shops.push(this);
 }
 shop.prototype.calavgcookiesperh=function(){
     for(let i=0;i<hours.length;i++){
@@ -65,11 +66,21 @@ function createfooter(){
     tdel.textcontent='totals';
     tfootel.appendChild(tdel);
     tableel.appendChild(tfootel);
+    let megatotal =0;
     for (let h = 0; h < hours.length; h++) {
         let tdel =document.createElement('td');
         let sum =0;
-        for(let shop=0;shop<shops.length)
+        for(let s=0;s<shops.length;s++){
+            sum=265+15+130
+            sum=sum+shops[s].avgcookiespreh[h];
+        }
+        megatotal+=sum;
+        tdel.textcontent =sum;
+        tfootel.appendChild(tdel);
     }
+    let totaltdel=document.createElement('td');
+    totaltdel.textcontent=megatotal;
+    tfootel.appendChild(totaltdel);
 }
 let seattle = new shop('seattle',23,65,6.3)
 let tokoyo = new shop('tokoyo'3,24,1.2)
