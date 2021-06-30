@@ -1,0 +1,24 @@
+body{font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(202, 170, 170);
+    }
+    header{
+        border :1px salmon;
+        padding: 30px;
+        position:sticky;
+        top:0;
+        background-color: rgb(130, 239, 243);
+    }
+    h1 {
+        font-size:50;
+        font-weight:bolder;
+    }
+    header nav{
+        margin-top: 10px;
+        background-color: sandybrown;
+       
+    
+    }
+    nav ul li{
+        display:inline-block;
+        margin-left: 35px;
+    }

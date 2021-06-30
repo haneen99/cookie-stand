@@ -8,6 +8,8 @@ function shop(shopname,min,max,max,avg,){
     this.randcust=[];
     this.avgcookiesperh:[],
     this.total :0
+    
+    
     shops.push(this);
 }
 shop.prototype.calavgcookiesperh=function(){

@@ -2,6 +2,11 @@
 'use strict';
 
 let hours =['6 am','7am','8 am','9 am','10am','11am','12 pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm',]
+let cnotainer=document.getElementById('container')
+let tableel=document.createElement('table');
+cnotainer.appendChild(tableel);
+
+}
 let tokoyo ={
     shopname:'tokoyo'
     mincust:3,
