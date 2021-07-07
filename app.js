@@ -263,3 +263,4 @@ console.log(lima);
 lima.calcrandcustperhour();
 lima.calavgcookiesperh();
 lima.render();
+maketablefooter();
